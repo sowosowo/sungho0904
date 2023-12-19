@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            right: -200px; /* 초기에는 오른쪽으로 숨김 */
+            transition: right 0.3s ease; /* 부드러운 이동 효과 추가 */
+        }
+
+        nav img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin-right: 200px; /* 메뉴가 오른쪽에 있을 때 콘텐츠 여백 추가 */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        @media only screen and (max-width: 767px) {
+            nav {
+                right: -200px;
+            }
+
+            section {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <p>ㅤ</p>
+        <ul class="navbar-fullscreen-links">
+            <li><a href="./Mhome.html" title="">홈</a></li>
+            <li><a href="./Mabout.html" title="">프로필</a></li>
+            <li><a href="./Minterview.html" title="">인터뷰</a></li>
+            <li><a href="./Mdirectly.html" title="">직캠</a></li>
+            <li><a href="./Msns.html" title="">onedoor</a></li>
+            <li><a href="./MCamera.html" title="">홈마님들 리스트</a></li>
+            <li><a href="./Mcopy.html" title="">손민수</a></li>
+            <li><a href="./MPlay.html" title="">플레이리스트</a></li>
+            <li><a href="https://twitter.com/sowo_sowo" title="">트위터</a></li>
+          </ul>
+    </nav>
+    <section>
+        <img src="https://phinf.wevpstatic.net/MjAyMzA1MjZfODQg/MDAxNjg1MTEwNTQ1NjMx.HnabMHxzJuywFwc68DlE-zV7JmMfA5kuIbqhVNCgCKQg.Xjh6-3f4tqr8uQQ3FleERoURAmNwOvvvvRYmAH8YH6Qg.JPEG/image.jpg?type=s704_704_stopgif" alt="Content Image">
+        <h2 class="with-project-number" style="font-size: 50px; margin-top: 5px; margin-bottom: 5px;">directly</h2>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ"머리부터 발 끝ㅤ</p><br>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ아니 내 심장까지ㅤ</p><br>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ쪼여오는데~"ㅤ</p>
+        <p style="color: rgb(0, 0, 0);">성호 직캠 모음집 입니다.</p>
+              <p style="color: rgb(0, 0, 0);">전체화면으로 보시면 편하게 보실 수 있습니다</p><br>
+              <div class="video-container">
+                <!-- 1번 재생목록 -->
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/videoseries?si=5yWxFK8t0aQeTIFL&amp;list=PL9jQdSUNI9UQwS510NXB0oF0SWUmqjOch" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    </section>
+  
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.right = nav.style.right === '0px' ? '-200px' : '0px';
+        }
+    </script>
+
+</body>
+</html>

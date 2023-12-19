@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            right: -200px; /* 초기에는 오른쪽으로 숨김 */
+            transition: right 0.3s ease; /* 부드러운 이동 효과 추가 */
+        }
+
+        nav img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin-right: 200px; /* 메뉴가 오른쪽에 있을 때 콘텐츠 여백 추가 */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        @media only screen and (max-width: 767px) {
+            nav {
+                right: -200px;
+            }
+
+            section {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <p>ㅤ</p>
+        <ul class="navbar-fullscreen-links">
+            <li><a href="./Mhome.html" title="">홈</a></li>
+            <li><a href="./Mabout.html" title="">프로필</a></li>
+            <li><a href="./Minterview.html" title="">인터뷰</a></li>
+            <li><a href="./Mdirectly.html" title="">직캠</a></li>
+            <li><a href="./Msns.html" title="">onedoor</a></li>
+            <li><a href="./MCamera.html" title="">홈마님들 리스트</a></li>
+            <li><a href="./Mcopy.html" title="">손민수</a></li>
+            <li><a href="./MPlay.html" title="">플레이리스트</a></li>
+            <li><a href="https://twitter.com/sowo_sowo" title="">트위터</a></li>
+          </ul>
+    </nav>
+    <section>
+        <img src="https://phinf.wevpstatic.net/MjAyMzExMTZfMjQ1/MDAxNzAwMTQ0NjAzMDQ0.FCUXwxUEYc-WFGTxRc4H6ptlmEheIPOnVQXxTxCzWp8g.HRphWHdm0IMmpDW08ybsFBkjRCgWRN7Keng2YUQZFaog.JPEG/image.jpg?type=s704_704_stopgif" alt="Content Image">
+        <h2 class="with-project-number" style="font-size: 50px; margin-top: 5px; margin-bottom: 5px;">home</h2>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ"저의 첫 활동을 이렇게 멋지고 아름다운ㅤ</p>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ기억으로 간직할 수 있게ㅤ</p>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ해주셔서 너무 감사합니다!!"ㅤ</p>
+        <p style="color: rgba(0, 0, 0, 0.308);">빠진 분들이 있다면 편하게</p>
+        <p style="color: rgba(0, 0, 0, 0.308);"> @sowo_sowo로 디엠 주세요</p>
+        
+
+        <font size=6>
+            <p class="FAiryk"><a href="https://twitter.com/sungho_Fairy" target="_blank">FAiryk</a></p>
+            <p class="ColorLife."><a href="https://twitter.com/colorlife030904" target="_blank">ColorLife.</a></p>
+            <p class="비상구"><a href="https://twitter.com/394_486" target="_blank">비상구</a></p>
+            <p class="China_SunghoSept"><a href="https://twitter.com/ChinaSunghoSept" target="_blank">China_SunghoSept</a></p>
+            <p class="🍵𝙨𝙥𝙤𝙤𝙣"><a href="https://twitter.com/904spoooon" target="_blank">🍵𝙨𝙥𝙤𝙤𝙣</a></p>
+            <p class="𝙣𝙤 𝙚𝙭𝙞𝙩."><a href="https://twitter.com/noexit_sungho" target="_blank">𝙣𝙤 𝙚𝙭𝙞𝙩.</a></p>
+            <p class="Purest"><a href="https://twitter.com/Purest_sungho" target="_blank">Purest</a></p>
+            <p class="𝐭𝐭."><a href="https://twitter.com/TT_904" target="_blank">𝐭𝐭.</a></p>
+            <p class="Playlist"><a href="https://twitter.com/playlist0904" target="_blank">Playlist</a></p>
+            <p class="SphinkPark"><a href="https://twitter.com/SphinkPark904" target="_blank">SphinkPark</a></p>
+            <p class="𝒄𝒉𝒆𝒓𝒊𝒔𝒉_"><a href="https://twitter.com/cherish_0904" target="_blank">𝒄𝒉𝒆𝒓𝒊𝒔𝒉_</a></p>
+            <p class="Catch at!"><a href="https://twitter.com/Catch_at0904" target="_blank">Catch at!</a></p>
+          </font>
+    </section>
+  
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.right = nav.style.right === '0px' ? '-200px' : '0px';
+        }
+    </script>
+
+</body>
+</html>

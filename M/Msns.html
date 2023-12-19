@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            right: -200px;
+            /* 초기에는 오른쪽으로 숨김 */
+            transition: right 0.3s ease;
+            /* 부드러운 이동 효과 추가 */
+        }
+
+        nav img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin-right: 200px;
+            /* 메뉴가 오른쪽에 있을 때 콘텐츠 여백 추가 */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        @media only screen and (max-width: 767px) {
+            nav {
+                right: -200px;
+            }
+
+            section {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <p>ㅤ</p>
+        <ul class="navbar-fullscreen-links">
+            <li><a href="./Mhome.html" title="">홈</a></li>
+            <li><a href="./Mabout.html" title="">프로필</a></li>
+            <li><a href="./Minterview.html" title="">인터뷰</a></li>
+            <li><a href="./Mdirectly.html" title="">직캠</a></li>
+            <li><a href="./Msns.html" title="">onedoor</a></li>
+            <li><a href="./MCamera.html" title="">홈마님들 리스트</a></li>
+            <li><a href="./Mcopy.html" title="">손민수</a></li>
+            <li><a href="./MPlay.html" title="">플레이리스트</a></li>
+            <li><a href="https://twitter.com/sowo_sowo" title="">트위터</a></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="https://phinf.wevpstatic.net/MjAyMzA3MDFfMTA1/MDAxNjg4MTkzNzU2NTk3.ZmwcNbP5S4xxM_Hy3PFyB0zQG0bMPoQvzcInXyVYsbUg.YeazbN8qqmPIAPECru-zse0ohHVvKwp2a1mtISJHtJIg.JPEG/image.jpg?type=s704_704_stopgif" alt="Content Image">
+        <h2 class="with-project-number" style="font-size: 50px; margin-top: 5px; margin-bottom: 5px;">legend</h2>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ🌷"ONEDOOR들!"ㅤ</p><br>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ"몽샹몽샹한 꿈~"🌷ㅤ</p>
+        <p>글자를 누르시면 (제작자 사심으로 선정한)<br>성호 레전드로 넘어갑니다</p>
+        <p>수시로 업데이트 됩니다!</p>
+        <font size=6>
+            <p class=""><a href=https://x.com/noexit_sungho/status/1736019594564014308?s=20 target="_blank">231216 깜고 된 성호 </a></p>
+            <p class=""><a href=https://x.com/mewsungho/status/1714123352322015511?s=20 target="_blank">231016 냥발 크로스 </a></p>
+            <p class=""><a href=https://x.com/nyangnextdoor/status/1707640654531305783?s=20 target="_blank">230924 케타포 사뿐사뿐 </a></p>
+            <p class=""><a href=https://x.com/nyangnextdoor/status/1715599164325937544?s=20 target="_blank">전매특허 냥발 </a></p>
+            <p class=""><a href=https://x.com/dearmy_ho_/status/1703993337185960223?s=20 target="_blank">철봉 포스팃 </a></p>
+            <p class=""><a href=https://x.com/KIYOI39/status/1735956464156672342?s=20 target="_blank">성호 오빠! </a></p>
+            <p class=""><a href=https://x.com/dearmy_ho_/status/1733861133290025410?s=20 target="_blank">내 최애 누구게? </a></p>
+            <p class=""><a href=https://x.com/meownextdoor94/status/1712812522544545996?s=20 target="_blank">231013 지나오다 - 닐로</a></p>
+            <p class=""><a href=https://x.com/sungnyang__/status/1735656450993844630?s=20 target="_blank">미투 </a></p>
+            <p class=""><a href=https://twitter.com/sunghoface?t=EMRUUcKRH8EfEgY7iP8v7Q&s=09 target="_blank">박성호 얼굴 </a></p>
+            <p class=""><a href=https://x.com/my_xummer/status/1735297205085618556?s=20 target="_blank">학생운동 박성호 </a></p>
+            <p class=""><a href=https://x.com/at_jo_da/status/1710141235397382402?s=20 target="_blank">밥요정1 </a></p>
+            <p class=""><a href=https://x.com/yeoni_door/status/1691424318931263488?s=20 target="_blank">밥요정2 </a></p>
+            <p class=""><a href=https://x.com/rishwoo/status/1679665869444759552?s=20 target="_blank">밥요정3 </a></p>
+            <p class=""><a href=https://x.com/from_mama2022/status/1733866829154857133?s=20 target="_blank">밥요정4 </a></p>
+            <p class=""><a href=https://x.com/w0ongini_/status/1722268937604550773?s=20 target="_blank">축꾸장 </a></p>
+            <p class=""><a href=https://x.com/gogo94bnd/status/1736059228908073386?s=20 target="_blank">걘아니지예 </a></p>
+            <p class=""><a href=https://x.com/luvw1ns_/status/1669367877714194434?s=20 target="_blank">230615 카택vs배민 </a></p>
+        </font>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.right = nav.style.right === '0px' ? '-200px' : '0px';
+        }
+    </script>
+
+</body>
+
+</html>

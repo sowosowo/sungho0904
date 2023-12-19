@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            right: -200px;
+            /* 초기에는 오른쪽으로 숨김 */
+            transition: right 0.3s ease;
+            /* 부드러운 이동 효과 추가 */
+        }
+
+        nav img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin-right: 200px;
+            /* 메뉴가 오른쪽에 있을 때 콘텐츠 여백 추가 */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container img {
+            width: 100%;
+            max-width: 300px; /* Adjust the max-width as needed */
+            display: block;
+            margin: 0 auto;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            nav {
+                right: -200px;
+            }
+
+            section {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <p>ㅤ</p>
+        <ul class="navbar-fullscreen-links">
+            <li><a href="./Mhome.html" title="">홈</a></li>
+            <li><a href="./Mabout.html" title="">프로필</a></li>
+            <li><a href="./Minterview.html" title="">인터뷰</a></li>
+            <li><a href="./Mdirectly.html" title="">직캠</a></li>
+            <li><a href="./Msns.html" title="">onedoor</a></li>
+            <li><a href="./MCamera.html" title="">홈마님들 리스트</a></li>
+            <li><a href="./Mcopy.html" title="">손민수</a></li>
+            <li><a href="./MPlay.html" title="">플레이리스트</a></li>
+            <li><a href="https://twitter.com/sowo_sowo" title="">트위터</a></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="https://phinf.wevpstatic.net/MjAyMzEwMDFfMjQ4/MDAxNjk2MTY5ODYzMTI0.kwLsS1y-nLv-qfYYkzh973IWnH3ReqQhPmL1O3QFu2Ug.xr0SV1Cu70IcwWPMbLAIjjLa38h9dRIuBsix89fcXfEg.JPEG/image.jpg?type=s704_704_stopgif" alt="Content Image">
+        <h2 class="with-project-number" style="font-size: 50px; margin-top: 5px; margin-bottom: 5px;">closet</h2>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ어느 옷을 고를까나ㅤ</p>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤlet me choose oneㅤ</p>
+        <p style="color: rgba(0, 0, 0, 0.308);">!07.16/07.30/08.05/11.06 <br>판매처 링크를아시는 분은 <br>@sowo_sowo로 디엠 바랍니다!</p><br>
+
+        <div class="button-container">
+            <p style="font-size: 18px; color: #333;">06.27</p>
+            <img src="https://sungho0904.netlify.app/assets/images/06.27.jpg" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/2358379?utm_source=app_IOS&utm_medium=copy&utm_campaign=2023-06-27T19:03:40+0900&utm_content=2f849bec57c35e9d7b9ba57bc41d31f3">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">06</p>
+            <img src="https://sungho0904.netlify.app/assets/images/06.jpg" alt="Button Image">
+            <a href="http://mobile--shop3.opener55.cafe24.com/product/twinsun-cardigan-lemon-stairsyellow/27778/category/910/display/1/">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">07.12</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.12.jpg" alt="Button Image">
+            <a href="https://kream.co.kr/products/137332">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">07.16</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.16.jpg" alt="Button Image">
+            <a href="">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">07.22</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.22.jpg" alt="Button Image">
+            <a href="">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">07.23</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.23.jpg" alt="Button Image">
+            <a href="https://kream.co.kr/products/58147">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">07.24</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.24.jpg" alt="Button Image">
+            <a href="https://kream.co.kr/products/130540">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">07.26</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.26.jpg" alt="Button Image">
+            <a href="https://www.carhartt-wip.co.kr/product/148527">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">07.28</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.28.jpg" alt="Button Image">
+            <a href="https://kream.co.kr/products/73794">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">07.29</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.29.jpg" alt="Button Image">
+            <a href="https://kream.co.kr/products/73700">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">07.30</p>
+            <img src="https://sungho0904.netlify.app/assets/images/07.30.jpg" alt="Button Image">
+            <a href="">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">08.05</p>
+            <img src="https://sungho0904.netlify.app/assets/images/08.05.jpg" alt="Button Image">
+            <a href="">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">08.13</p>
+            <img src="https://sungho0904.netlify.app/assets/images/08.13.jpg" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/3232301?utm_source=app_IOS&utm_medium=copy&utm_campaign=2023-08-13T21:36:23+0900&utm_content=2f849bec57c35e9d7b9ba57bc41d31f3">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">09.05</p>
+            <img src="https://sungho0904.netlify.app/assets/images/09.05.jpg" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/3252185">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">09.09</p>
+            <img src="https://sungho0904.netlify.app/assets/images/09.09.png" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/3034843">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">09.20</p>
+            <img src="https://sungho0904.netlify.app/assets/images/09.20.png" alt="Button Image">
+            <a href="https://beslow.co.kr/product/flame-applique-logo-t-shirts-charcoal/3573/category/194/display/1/">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">09.30</p>
+            <img src="https://sungho0904.netlify.app/assets/images/09.30.jpg" alt="Button Image">
+            <a href="https://kream.co.kr/products/165169">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">10.02</p>
+            <img src="https://sungho0904.netlify.app/assets/images/10.02(2).jpg" alt="Button Image">
+            <a href="https://www.casetify.com/ko_KR/product/don--t-be-afraid-by-mirrors-reflect-you/iphone-15-pro-max/magsafe-compatible-impact-case#/16005982">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">10.02</p>
+            <img src="https://sungho0904.netlify.app/assets/images/10.02.jpg" alt="Button Image">
+            <a href="https://www.breuninger.com/it/en/b/mm6-maison-margiela/hoodie/1001476971/p/">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">10.15</p>
+            <img src="https://sungho0904.netlify.app/assets/images/10.15.jpg" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/3554733?utm_source=app_IOS&utm_medium=copy&utm_campaign=2023-10-16T07:45:26+0900&utm_content=fa202af20ffdcfaf0d9ed7524832e21e">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">11.06</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.06.jpg" alt="Button Image">
+            <a href="">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">11.07</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.07.png" alt="Button Image">
+            <a href="https://wooalong.co.kr/product/v-neck-damage-knit-grey/1249/category/227/display/1/">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">11.09</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.09.png" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/3131626/0">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">11.11</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.11.png" alt="Button Image">
+            <a href="https://beslow.co.kr/product/wool-military-zip-up-jacket-black/3801/category/243/display/1/">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">11.13</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.13.jpg" alt="Button Image">
+            <a href="https://m.acmedelavie.com/product/%EC%95%84%ED%81%AC%EB%A9%94%EB%93%9C%EB%9D%BC%EB%B9%84-adlv-sporty-printing-knit-navy/5441/category/224/display/1/">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">11.21</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.21.jpg" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/3554723">See More</a>
+       
+            <p style="font-size: 18px; color: #333;">11.27</p>
+            <img src="https://sungho0904.netlify.app/assets/images/11.27.jpg" alt="Button Image">
+            <a href="https://www.musinsa.com/app/goods/2444560?_gf=A">See More</a>
+            
+            <p style="font-size: 18px; color: #333;">12.11</p>
+            <img src="https://sungho0904.netlify.app/assets/images/12.11.jpg" alt="Button Image">
+            <a href="https://leekorea.co.kr/product/detail.html?product_no=3433&cate_no=27&display_group=1">See More</a>
+       
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.right = nav.style.right === '0px' ? '-200px' : '0px';
+        }
+    </script>
+
+</body>
+
+</html>

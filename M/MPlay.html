@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+            position: fixed;
+            height: 100%;
+            right: -200px; /* 초기에는 오른쪽으로 숨김 */
+            transition: right 0.3s ease; /* 부드러운 이동 효과 추가 */
+        }
+
+        nav img {
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin-right: 200px; /* 메뉴가 오른쪽에 있을 때 콘텐츠 여백 추가 */
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+        @media only screen and (max-width: 767px) {
+            nav {
+                right: -200px;
+            }
+
+            section {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <p>ㅤ</p>
+        <ul class="navbar-fullscreen-links">
+            <li><a href="./Mhome.html" title="">홈</a></li>
+            <li><a href="./Mabout.html" title="">프로필</a></li>
+            <li><a href="./Minterview.html" title="">인터뷰</a></li>
+            <li><a href="./Mdirectly.html" title="">직캠</a></li>
+            <li><a href="./Msns.html" title="">onedoor</a></li>
+            <li><a href="./MCamera.html" title="">홈마님들 리스트</a></li>
+            <li><a href="./Mcopy.html" title="">손민수</a></li>
+            <li><a href="./MPlay.html" title="">플레이리스트</a></li>
+            <li><a href="https://twitter.com/sowo_sowo" title="">트위터</a></li>
+          </ul>
+    </nav>
+    <section>
+        <img src="https://pbs.twimg.com/media/Fy5DVnOaMAE9iiP?format=jpg&name=small" alt="Content Image">
+        <h2 class="with-project-number" style="font-size: 50px; margin-top: 5px; margin-bottom: 5px;">playlist</h2>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ"‘내가 좋아하는 건 뭘까’ㅤ</p><br>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ오래 생각한 결과,ㅤ</p><br>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ노래하고 무대에 설 때ㅤ</p><br>
+        <p style="color: rgb(255, 255, 255); display: inline-block; background-color: #64646494;">ㅤ가장 행복한 사람이라는 걸 알았어요"ㅤ</p>
+        <p style="color: rgb(0, 0, 0);">유튜브 뮤직으로 연결됩니다</p>
+              
+        <div class="video-container">
+                <a href="https://music.youtube.com/watch?v=dFpFjFwWeB8&si=VpE5701zGb-kkHiH">
+                    <div class="slide-text">민들레 - 우효</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=bYCG92Gjwgc&si=jWAYa1Y0utrMrJoC">
+                    <div class="slide-text">Movie - Tom Misch</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=x-8tiDgVEWQ&si=5f6LGGfqb76s1qif">
+                    <div class="slide-text">Talk 2 Me Nice - SAAY
+                  </div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=2pvaq6MlbSM&si=sFyV1QpOUALhOm17">
+                    <div class="slide-text">The 30th - Billie Eilish</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=XNkxuEClWN8&si=7g-f5cCSItGwhH11">
+                    <div class="slide-text">소녀감성100퍼센트 - 우효</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=ghOemlR83Kk&si=2Tcg8bMw_1IktfF1">
+                    <div class="slide-text">Yellow Cap - DPR LIVE</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=FsJDnrY1Cuk&si=tbZR_2pzx1jLr2uF">
+                    <div class="slide-text">PINKTOP - The Volunteers</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=SjXN1nDUdsU&si=VcrBbp4AL60mS1a7">
+                    <div class="slide-text">Invincible - Aminé</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=sAIYGaNRJGE&si=nyW_c_3SpgZbkDL1">
+                    <div class="slide-text">Smoke Sprite (feat. RM) - 황소윤</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=dHVs5Y_RU4o&si=3B-8X8s6Dzd1bG6c">
+                    <div class="slide-text">Big Talk - SOFY</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=R4o_gXza_6I&si=-hR_5sFaecbn5W6S">
+                    <div class="slide-text">CLIONE (feat. 119) - MILLIC</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=1RKX1_ML4f4&si=3RkYV0eRkJEGXxhj">
+                    <div class="slide-text">Don't You Worry 'Bout a Thing (feat. Stevie Wonder) - Incognito</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=z3i0dDVUOYo&si=iAmzkMd1BkcWKXHq">
+                    <div class="slide-text">이게 아닌데 - 태양</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=Vj5xda512lw&si=jPEf7yKyeP3IQpOy">
+                    <div class="slide-text">Golden Hour - MARK</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=5vETwZfmRgM&si=UHeB_R7qClP2_jRz">
+                    <div class="slide-text">Beauty and the Beast - Ariana Grande & John Legend</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=Z6iCQ6NJ5yA&si=qHieFeWd9S2XEIY5">
+                    <div class="slide-text">Roommate - ZICO</div>
+                  </a>
+                </div><br>
+                <div class="box_main slide">
+                  <a href="https://music.youtube.com/watch?v=EqAq-nqbeOQ&si=bxtbkwd1M413NJb9">
+                    <div class="slide-text">Citizen Kane - 혁오</div>
+                  </a>
+            </div><br>
+    </section>
+  
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.style.right = nav.style.right === '0px' ? '-200px' : '0px';
+        }
+    </script>
+
+</body>
+</html>
